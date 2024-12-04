@@ -30,12 +30,11 @@ const useStyles = makeStyles((theme) => ({
 
 const projects = [
   {
-    name: "Project 1",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-    consequatur magni quod nesciunt necessitatibus molestiae non
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus
-    iste alias sunt veritatis nisi dolores!`,
+    name: "CONTROL DE FLOTA",
+    description: `Este sistema esta pensando para tener el control diario de los ingresos e egresos que genera
+    los moviles de la empresa, viajes, combustible, viaticos, etc`,
     image: project1,
+    url: "https://prueba.tiquidevs.click/src/vistas/login.html"
   },
   {
     name: "Project 2",
@@ -105,11 +104,11 @@ const Portfolio = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
+                {/* <Button size="small" color="primary">
                   Share
-                </Button>
-                <Button size="small" color="primary">
-                  Live Demo
+                </Button> */}
+                <Button size="small" href={project.url} color="primary"  target="_blank" rel="noopener noreferrer" >
+                  Ver Demo
                 </Button>
               </CardActions>
             </Card>

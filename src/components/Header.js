@@ -5,12 +5,12 @@ import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
-import avatar from "../avatar.png";
+import avatar from "../logo.png";
 
 const useStyles = makeStyles((theme) => ({
   avatar: {
-    width: theme.spacing(15),
-    height: theme.spacing(15),
+    width: theme.spacing(20),
+    height: theme.spacing(20),
     margin: theme.spacing(1),
   },
   title: {
@@ -37,18 +37,23 @@ const Header = () => {
   return (
     <Box className={classes.typedContainer}>
       <Grid container justify="center">
-        <Avatar className={classes.avatar} src={avatar} alt="Mahmudul Alam" />
+        <Avatar className={classes.avatar} src={avatar} alt="ING. DIEGO PERALTA" />
       </Grid>
       <Typography className={classes.title} variant="h4">
-        <Typed strings={["Mahmudul Alam"]} typeSpeed={40} />
+        <Typed strings={["ING. DIEGO PERALTA"]} typeSpeed={40} />
       </Typography>
 
       <Typography className={classes.subtitle} variant="h5">
         <Typed
           strings={[
             "Frontend Developer",
+            "React, Redux, Angular, Ruby",
             "Backend Developer",
-            "Native App Developer",
+            "Nodejs, Spring Boot, PHP, Python",
+            "Base de datos",
+            "Postgres, Mysql, Mongo, SqlServer",
+            "App Developer",
+            "Android, Flutter, Ionic",
           ]}
           typeSpeed={40}
           backSpeed={50}
