@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^7.2.1",
     "i": "^0.3.6",
     "npm": "^6.14.5",
+    "portfolio": "file:",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-particles-js": "^3.2.1",
@@ -19,7 +20,7 @@
     "react-typed": "^1.2.0"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start"
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
