@@ -39,7 +39,8 @@ const projects = [
     name: "Red Social Guarderias",
     description: `Un sistema diseñado para conectar a las familias con la guardería, funcionando como una red social institucional. Permite la visualización en tiempo real de actividades diarias, acceso a informes detallados sobre el desarrollo y progreso de los niños, y una galería de fotos de las actividades realizadas, fomentando la transparencia y fortaleciendo el vínculo entre la institución y los padres.`,
     image: project2,
-    url: "https://mis.tiquidevs.click"
+    url: "https://mis.tiquidevs.click",
+    url2: "https://play.google.com/store/apps/details?id=com.cdpm.tiquitines"
   },
   {
     name: "Sistema de Facturacion",
@@ -102,12 +103,20 @@ const Portfolio = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                {/* <Button size="small" color="primary">
-                  Share
-                </Button> */}
                 <Button size="small" href={project.url} color="primary"  target="_blank" rel="noopener noreferrer" >
                   Ver Demo
                 </Button>
+                {project.url2 && (
+                <Button
+                  size="small"
+                  href={project.url2}
+                  color="primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Descargar App
+                </Button>
+                )}
               </CardActions>
             </Card>
           </Grid>
