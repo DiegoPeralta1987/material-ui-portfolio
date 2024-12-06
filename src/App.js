@@ -8,13 +8,19 @@ import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 
 import "./App.css";
+import VisitCounter from "./components/VisitCounter";
 
+{/* <div className="center-container">
+  <VisitCounter />  
+</div> */}
 function App() {
   return (
+    
     <React.Fragment>
       <CssBaseline />
       <Navbar />
       <Switch>
+        
         <Route exact path="/" component={Home} />
         <Route exact path="/resume" component={Resume} />
         <Route exact path="/portfolio" component={Portfolio} />

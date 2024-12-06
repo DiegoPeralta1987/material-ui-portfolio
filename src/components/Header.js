@@ -6,6 +6,7 @@ import Box from "@material-ui/core/Box";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
 import avatar from "../logo.png";
+import VisitCounter from "./VisitCounter";
 
 const useStyles = makeStyles((theme) => ({
   avatar: {
@@ -60,6 +61,9 @@ const Header = () => {
           loop
         />
       </Typography>
+       {/* Contador de visitas */}
+       <VisitCounter />
+    
     </Box>
   );
 };

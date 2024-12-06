@@ -210,7 +210,7 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-           Developer( Spring boot, Angular, Python, JasperReport)
+           Developer( Spring boot, Postgres, Angular, Python, JasperReport)
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
            MINISTERIO DE TECNOLOGIA (MITIC)
